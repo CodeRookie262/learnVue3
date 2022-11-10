@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "http-server -p 5555 -c-1",
-    "dev:vue3": "node vue3/scripts/dev.js",
+    "dev:vue3": "node vue_3/scripts/dev.js",
     "debug:vue3_esm": "run-p \"serve\" \"dev:vue3 -- -if esm-browser\"",
     "debug:vue3": "run-p \"serve\" \"dev:vue3\""
   },
