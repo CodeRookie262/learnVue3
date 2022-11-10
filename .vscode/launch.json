@@ -1,0 +1,23 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Vue3 esm 调试",
+      "sourceMaps": true,
+      "webRoot": "${workspaceFolder}",
+			"url": "http://localhost:5555/vue3/examples/index.html"
+		},
+    {
+			"type": "chrome",
+			"request": "launch",
+			"name": "Vue3 global 调试",
+      "webRoot": "${workspaceFolder}",
+			"file": "${workspaceFolder}/vue3/examples/index.html"
+		}
+	]
+}

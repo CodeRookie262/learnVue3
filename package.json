@@ -1,0 +1,27 @@
+{
+  "name": "web-sourcecode-analysis",
+  "version": "1.0.0",
+  "description": "1. 使用 `npx pnpm i` 进行依赖安装即可\r 2. 依赖安装结束后使用 `pnpm run dev` 打包调试的代码，dev 构建的产物默认带有 sourcemap\r 3. 配置 `.vscode/launch.json`",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -p 5555 -c-1",
+    "dev:vue3": "node vue3/scripts/dev.js",
+    "debug:vue3_esm": "run-p \"serve\" \"dev:vue3 -- -if esm-browser\"",
+    "debug:vue3": "run-p \"serve\" \"dev:vue3\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeRookie262/web-sourcecode-analysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeRookie262/web-sourcecode-analysis/issues"
+  },
+  "homepage": "https://github.com/CodeRookie262/web-sourcecode-analysis#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
